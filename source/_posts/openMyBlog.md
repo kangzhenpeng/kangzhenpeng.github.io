@@ -2,9 +2,7 @@
 title: 开启我的博客
 tags: [Hexo, GitHub, Blog]
 categories: 
-- Blog
-category_map:
- 博客基础: Blog
+- 博客基础
 toc: true
 ---
 ### 基础环境配置
