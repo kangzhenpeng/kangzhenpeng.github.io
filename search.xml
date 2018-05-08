@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[开启我的博客]]></title>
+    <url>%2F2018%2F05%2F06%2FopenMyBlog%2F</url>
+    <content type="text"><![CDATA[基础环境配置 node.js 安装 git 环境安装 hexo 安装 npm install -g hexo-cli 权限不够请使用 sudo npm install -g hexo-cli GitHub 创建博客关联创库 在gitHub上创建一个创库，起名your_github_name.github.io 搭建博客 创建属于你的博客文件夹xxxBlog 并初始化 cd xxxBlog hexo init 导入依赖包 npm install 在上述步骤生成的_config.yml中定制配置 itle: Choose a titlesubtitle: Any subtitle you likedescription: Anything you likeauthor: Your namelanguage: zh-CNtimezone: Asia/Shanghaideploy:type: gitrepo: https://github.com/your_github_name/your_github_name.github.com.gitbranch: master 博客部署 开启本地验证 hexo server 安装部署器 npm install hexo-deployer-git –save 博客部署到GitHub上 hexo deploy 浏览器your_github_name.github.io访问部署以后的博客 博客主题切换 挑选自己喜欢的主题，Google上随便一搜hexo的主题多的是，我自己使用的是Maupassant的主题，屠夫的优化版。 git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant 安装主题和渲染器 npm install hexo-renderer-jade –save npm install hexo-renderer-sass –save 重新编辑xxxBlog下的_config.yml文件 将theme的值改为maupassant hexo三部曲 hexo clean hexo g hexo deploy 浏览器your_github_name.github.io访问部署以后的新主题的博客 404页面配置 在source下创建一个404.html的文件 使用腾讯公益404代码，直接在html中写如下代码&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt; 适配多电脑发布博客 在github的your_github_name.github.io上创建一个分支，名hexo 将hexo设置为默认分支 git clone your_github_name.github.io 到本地，然后将xxxBlog里面的文件都拷贝到your_github_name.github.io中，将theme中的.git文件删除，git add/commit 这些变更。 以后只要git pull这个分支，然后npm install就可以在其他的电脑上操作你的博客了。 Hexo 的基本操作 创建新博客 hexo new “create Blog” 创建单独页面 hexo new page xxx 本地构建服务 hexo server 本地html缓存清理 hexo clean html 生成 hexo generate html 部署 hexo deploy]]></content>
+      <categories>
+        <category>博客基础</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+</search>
