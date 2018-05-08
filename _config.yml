@@ -85,3 +85,10 @@ deploy:
   type: git
   repo: https://github.com/kangzhenpeng/kangzhenpeng.github.io.git
   branch: master
+
+# self search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
