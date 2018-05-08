@@ -11,7 +11,7 @@ gitment:
   client_id: 07853b80e09b00865a0a ## GitHub client ID, e.g. 75752dafe7907a897619
   client_secret: bc5c6954bfb2fb884805e1e30984be2557dcf889 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
-  enable: true ## If you want to use Gitment comment system please set the value to true.
+  enable: false ## If you want to use Gitment comment system please set the value to true.
   owner: kangzhenpeng ## Your GitHub ID, e.g. username
   repo: https://github.com/kangzhenpeng/kangzhenpeng.github.io.git ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
   client_id: 07853b80e09b00865a0a ## GitHub client ID, e.g. 75752dafe7907a897619
