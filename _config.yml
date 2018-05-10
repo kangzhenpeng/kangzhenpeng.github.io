@@ -60,6 +60,7 @@ default_category: 杂谈
 category_map:
   杂谈: TittleTattle
   博客基础: Blog
+  设计: Design
 tag_map:
 
 # Date / Time format

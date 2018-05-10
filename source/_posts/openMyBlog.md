@@ -5,15 +5,16 @@ categories:
 - 博客基础
 toc: true
 ---
+<!-- more -->
 ### 基础环境配置
 
  1. node.js 安装
  2. git 环境安装
  3. hexo 安装 npm install -g hexo-cli 权限不够请使用 sudo npm install -g hexo-cli
 
-### GitHub 创建博客关联创库
+### GitHub 创建博客关联仓库
 
- 1. 在gitHub上创建一个创库，起名your_github_name.github.io
+ 1. 在gitHub上创建一个仓库，起名your_github_name.github.io
 
 ### 搭建博客
 
