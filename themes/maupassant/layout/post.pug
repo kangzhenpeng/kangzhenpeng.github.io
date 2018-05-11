@@ -10,8 +10,12 @@ block content
       if page.categories.length > 0
         span= ' | '
         span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
+          each category, index in page.categories.toArray()
+            if index < page.categories.toArray().length - 1
+              a(href=url_for(category.path))= category.name
+              | ->
+            else
+              a(href=url_for(category.path))= category.name
       if theme.busuanzi == true
         script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
         span#busuanzi_container_page_pv= ' | '

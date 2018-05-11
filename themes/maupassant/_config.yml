@@ -41,7 +41,7 @@ shareto: true ## If you want to use the share button please set the value to tru
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
 canvas_nest:
-  enable: true ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
   color: "100,99,98" ## RGB value of the color, e.g. "100,99,98"
   opacity: "0.7" ## Transparency of lines, e.g. "0.7"
   zIndex: "-1" ## The z-index property of the background, e.g. "-1"
