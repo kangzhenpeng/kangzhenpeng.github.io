@@ -132,10 +132,12 @@ div {
       list-style: none;
       margin-left: 20px; }
       #sidebar .widget .category-list ul li::before {
+        font-size: 10px;
         font-family: "FontAwesome";
         content: "\f115";
         padding-right: 0.3em; }
     #sidebar .widget .category-list li::before {
+      font-size: 10px;
       font-family: "FontAwesome";
       content: "\f115";
       padding-right: 0.3em; }
