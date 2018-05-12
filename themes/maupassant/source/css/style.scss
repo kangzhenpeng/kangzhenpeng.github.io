@@ -152,12 +152,14 @@ div {
                 list-style: none;
                 margin-left: 20px;
                 li::before {
+                    font-size: 12px;
                     font-family: "FontAwesome";
                     content: "\f115";
                     padding-right: 0.3em;
                 }
             }
             li::before {
+                font-size: 12px;
                 font-family: "FontAwesome";
                 content: "\f115";
                 padding-right: 0.3em;
