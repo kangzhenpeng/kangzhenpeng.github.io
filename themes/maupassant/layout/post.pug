@@ -13,7 +13,7 @@ block content
           each category, index in page.categories.toArray()
             if index < page.categories.toArray().length - 1
               a(href=url_for(category.path))= category.name
-              | ->
+              |  -> 
             else
               a(href=url_for(category.path))= category.name
       if theme.busuanzi == true

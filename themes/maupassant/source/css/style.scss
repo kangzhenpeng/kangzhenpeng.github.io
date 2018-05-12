@@ -147,6 +147,22 @@ div {
                 line-height: 1.5;
             }
         }
+        .category-list {
+            ul {
+                list-style: none;
+                margin-left: 20px;
+                li::before {
+                    font-family: "FontAwesome";
+                    content: "\f115";
+                    padding-right: 0.3em;
+                }
+            }
+            li::before {
+                font-family: "FontAwesome";
+                content: "\f115";
+                padding-right: 0.3em;
+            }
+        }
         .category-list-count {
              padding-left: 5px;
              color: #6E7173;
