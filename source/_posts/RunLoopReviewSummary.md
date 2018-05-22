@@ -1,5 +1,5 @@
 ﻿---
-title: RunLoop回顾总结
+title: RunLoop 回顾总结
 date: 2018-05-08 20:42:16
 tags: [iOS, RunLoop, Thread]
 categories: 
@@ -217,13 +217,13 @@ static void *__CFTSDGetSpecific() {
         - KCFRunLoopAfterWaiting: 结束休眠。
         - KCFRunLoopExit: loop 退出。
  - RunLoop 在处理完 source0 后多空转一次，是为了保证source0被确切的执行完毕。
- - RunLoop 只能在单一 Mode 下运行，切换 mode 后吧，新 mode 下运行结束后，并不会继续之前的 mode 下重新 run，但是会还原之前的运行数据。
+ - RunLoop 只能在单一 Mode 下运行，切换 mode 后会保存之前 mode 的运行数据。新 mode 下运行结束后，并不会继续之前的 mode 下重新 run，但是会还原之前的运行数据。
  - RunLoop 的 block 是用单向链表存储的，在第一次运行完 block 的时候会变更为环形链表，便于后续 block 执行的查找。block 猜测是 dispatch 过来的。
  - perform...selector 最后对应的是一个定时器事件。
 
 ### 流程图
 <figure>
-    <img src="http://p8pq9azjn.bkt.clouddn.com/image/runloop/LoopRun.png">
+    <img src="http://p8pq9azjn.bkt.clouddn.com/image/runloop/run.png">
 </figure>
 
 ### 核心代码
