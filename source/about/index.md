@@ -1,6 +1,7 @@
 ﻿---
 title: 我就是大白
 date: 2018-05-05 17:26:02
+comments: false
 ---
 <div><div style="float: left; width: 100%;">
 <img style="width: 40%; border-radius:25px; margin-right: 10%; display:inline-block;" src="http://p8pq9azjn.bkt.clouddn.com/image/about/me.jpg" align=left />
