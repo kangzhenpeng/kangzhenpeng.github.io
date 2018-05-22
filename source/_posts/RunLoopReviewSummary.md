@@ -516,7 +516,8 @@ CF_INLINE volatile _per_run_data *__CFRunLoopPushPerRunData(CFRunLoopRef rl) {
 
 // pop 函数
 CF_INLINE void __CFRunLoopPopPerRunData(CFRunLoopRef rl, volatile _per_run_data *previous) {
-    if (rl->_perRunData) // 判断当前的运行数据shi CFAllocatorDeallocate(kCFAllocatorSystemDefault, (void *)rl->_perRunData // 存在，则销毁
+    // 判断当前的运行数据是否存在
+    if (rl->_perRunData) CFAllocatorDeallocate(kCFAllocatorSystemDefault, (void *)rl->_perRunData // 存在，则销毁
     rl->_perRunData = previous; // 切换运行数据为上一次的运行数据
 }
 ```
