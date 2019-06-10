@@ -24,7 +24,7 @@ App 在启动后向主线程注册了两个Observer，监听 RunLoop 的 Entry/B
 - 每一个线程都一个 autoreleasePool 栈，来管理与其关联的 autoreleasePool，当线程销毁时，所有相关联的 pool 都被销毁，并释放其中的对象。
 
 <figure>
-    <img src="http://p8pq9azjn.bkt.clouddn.com/image/autoreleasePool/AutoreleasePool.png!blogPicStyle">
+    <img src="https://user-images.githubusercontent.com/17019269/59204099-827af500-8bd2-11e9-9290-1110ca55e505.png">
 </figure>
 
 
@@ -60,10 +60,10 @@ App 在启动后向主线程注册了两个Observer，监听 RunLoop 的 Entry/B
     ```
 
 <figure>
-    <img src="http://p8pq9azjn.bkt.clouddn.com/image/autoreleasePool/MemoryStructure.png!blogPicStyle">
+    <img src="https://user-images.githubusercontent.com/17019269/59204125-9292d480-8bd2-11e9-8630-4610665af390.png">
 </figure>
 <figure>
-    <img src="http://p8pq9azjn.bkt.clouddn.com/image/autoreleasePool/CoreProcess.png!blogPicStyle">
+    <img src="https://user-images.githubusercontent.com/17019269/59204109-8870d600-8bd2-11e9-96a4-c4c4cd59ceea.png">
 </figure>
 
 ### 核心代码
